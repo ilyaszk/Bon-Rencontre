@@ -1,0 +1,36 @@
+.section1 {
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    margin: 2rem;
+
+}
+
+textarea {
+    min-height: 13em;
+    width: 98%;
+    max-width: 98%;
+    padding: .5rem;
+    border-radius: 8px;
+    border: 2px solid #aeaeae;
+}
+
+input {
+    height: 1rem;
+    width: 45%;
+    padding: .5rem;
+    border-radius: 8px;
+    background-color: var(--white);
+    border: 2px solid #aeaeae;
+}
+
+.row-btn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.previews {
+    max-width: 500px;
+}

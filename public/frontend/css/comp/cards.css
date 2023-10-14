@@ -1,0 +1,43 @@
+.card {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    padding-top: 0.5rem;
+    text-align: center;
+    color: var(--yellow);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.space {
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 760px) {
+    .card {
+        width: 100%;
+    }
+
+    .card-body {
+        width: 100%;
+    }
+
+    .card-footer {
+        justify-content: center;
+    }
+}

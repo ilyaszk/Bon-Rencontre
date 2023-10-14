@@ -1,0 +1,27 @@
+@extends('layouts.commande')
+@section('space')
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+@endsection
+@section('titres')
+    <div>
+        <span>Article(s)</span>
+        <span>Prix</span>
+        <span>Quantité(s)</span>
+        <span>Total</span>
+        <span>Etat</span>
+    </div>
+@endsection
+@section('total')
+    <div>
+        <span></span>
+        <span></span>
+        <span>Total</span>
+        <span>{{ $commande->prix_total }}€</span>
+        <span></span>
+    </div>
+@endsection

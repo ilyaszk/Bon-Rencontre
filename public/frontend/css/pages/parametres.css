@@ -1,0 +1,297 @@
+.site-container-center-h{
+    display: flex;
+    justify-content: space-around;
+}
+
+h1{
+    text-align: center;
+}
+
+.input, .input-email-id, .form-control{
+    height: 1rem;
+    width: 11.2rem;
+    padding: .5rem;
+    border-radius: 8px;
+    background-color: var(--white);
+    border: 2px solid #aeaeae;
+}
+
+.input, .form-control{
+    width: 200px;
+}
+
+.param-component{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.param-component > button{
+    margin-top: 0em;
+}
+
+.param-component-password > form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.switch-component{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+button{
+    margin-left: 2em;
+}
+
+.password-button > button{
+    margin-bottom: 1em;
+}
+
+p, label{
+    margin-right: 1em;
+}
+
+.oldpasswrd{
+    margin-right: 2em;
+}
+
+.confirmation{
+    margin-right: 121px;
+}
+
+hr.rounded {
+    border-top: 4px solid #bbb;
+    border-radius: 5px;
+}
+
+.content{
+    padding: 1rem 2rem 2rem 2rem;
+    border-radius: 20px;
+    background-color: var(--white);
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.35);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20em;
+}
+
+.mdp{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+
+.emailp{
+    margin-right: 3em;
+}
+
+.input-email-id{
+    width: 600px;
+}
+
+form > button{
+    margin-top: 1em;
+}
+
+.lasth{
+    margin: 0em;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+
+    margin: 1em;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .switchform{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .switchform > button{
+      margin: 0em;
+  }
+
+
+  .cookies-component{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .buttons{
+      display: flex;
+      flex-direction: row;
+  }
+
+  form > .btn-cookies{
+      padding: 1em;
+      margin: 0px;
+      border-style: solid;
+      border-left: unset;
+  }
+
+  form > .btn-cookies:hover{
+      background-color: skyblue;
+  }
+
+  form:first-child > .btn-cookies{
+    padding: 1em;
+    margin: 0px;
+    border-left: solid;
+    border-width: 2px;
+  }
+
+
+@media screen and (max-width: 1100px) {
+    .site-container-center-h {
+        display: flex;
+        flex-direction: column;
+    }
+
+  
+
+    .button{
+        margin: 1em, 1em, 1em, 1em;
+    }
+
+    .content {
+        display: inline-block;
+        flex-direction: column;
+    }
+
+
+    form{
+        display: inline-block;
+        flex-direction: column;
+    }
+
+    .mdp{
+        display: inline-block;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+   
+    .site-container-center-h {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .param-component{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .champs{
+        display: inline-block;
+        flex-direction: column;
+    }
+
+    .param-component-password{
+        display: inline-block;
+        flex-direction: column;
+    }
+
+    .param-component-password > form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cookies-component{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cookies-component > a{
+        margin: 1em;
+        margin-bottom: 0em;
+    }
+
+    .content {
+        display: inline-block;
+        flex-direction: column;
+    }
+
+    .idp{
+        min-width: 90%;
+    }
+
+    .emailp{
+        min-width: 90%;
+    }
+
+    .input, .input-email-id, .form-control{
+        margin: 1em;
+        width: 80%;
+    }
+}

@@ -1,0 +1,116 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    color: var(--text-color1);
+    flex: 4;
+    margin-right: 2rem;
+}
+
+.form-input {
+    flex: 6;
+}
+
+.form-control {
+    height: 1rem;
+    width: 30em;
+    background-color: var(--white);
+    border: 2px solid var(--text-color2);
+    padding: .5rem;
+    border-radius: 8px;
+}
+
+/* CHECKBOX */
+
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.form-check-input {
+    margin-right: 0.75rem;
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: #fff;
+    /* Not removed via appearance */
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.1em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+
+.form-check-input::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--magenta);
+}
+
+.form-check-input:checked::before {
+    transform: scale(1);
+}
+
+.form-check-label {
+    color: var(--text-color1);
+}
+
+.select-control {
+    width: 20em;
+    border-radius: 14px;
+    border: 2px solid gray;
+    padding: 0.2rem 2rem;
+    background-color: var(--white);
+    text-align: center;
+}
+
+/* MOT DE PASSE OUBLIE */
+
+.forgot {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+@media screen and (max-width: 760px) {
+    .form-row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-label {
+        margin: 0rem 0rem 0.75rem 0rem;
+    }
+
+    .form-control {
+        width: 18rem;
+    }
+
+    .forgot {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        margin-top: 0.75rem;
+    }
+}

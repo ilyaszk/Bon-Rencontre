@@ -1,0 +1,92 @@
+
+.commandes {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70rem;
+   
+    
+
+}
+.commande {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.etat {
+    display: flex;
+    flex-direction: column;
+}
+table  {
+   
+    border-spacing: 1.5rem 1rem;  
+    margin: auto;
+}
+table tr td {
+    text-align: center;
+}
+.navigation-state-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.navigation-state {
+    margin-bottom: 40px;
+    margin: au;
+    
+}
+.navigation-state ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid grey;
+    border-radius: 50px;
+ 
+ 
+    
+}
+
+.navigation-state-container {
+    margin-bottom: 2rem;
+}
+.navigation-state ul li:first-of-type {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.navigation-state ul li:last-of-type {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.navigation-state ul li:not(:first-of-type) {
+    border-left: 1px solid grey;
+} 
+.navigation-state ul li a {
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    color: blue;
+}
+
+.navigation-state ul li:hover {
+    background-color: #e9ecef;
+    
+
+    
+    
+}   
+.navigation-state ul li:hover a {
+    border-color: #dee2e6;
+}
+
+.navigation-state ul li.active a {
+    color:white;
+}
+.navigation-state ul li.active{
+    background-color: blue;
+}

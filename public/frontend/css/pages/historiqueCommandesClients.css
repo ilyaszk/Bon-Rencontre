@@ -1,0 +1,99 @@
+.page {
+    width: 90%;
+    margin: auto;
+    
+    
+}
+
+.commandes-container {
+    margin-bottom: 10rem;
+    margin-top: 3rem;
+}
+table {
+    
+    text-align: left;
+    width: 80rem;
+    border-collapse:collapse;
+    margin: auto;
+    
+}
+
+table th:not(:last-of-type) {
+    background-color: #3a6070;
+    color: #FFF;
+    
+}
+table tr th {
+    padding-left: 5px;
+}
+table td {
+    border: 1px solid #e3e3e3;
+    padding: 4px 8px;
+}
+.mobile-container {
+    display: none;
+}
+table tr:nth-child(odd):not(:first-of-type){
+    background-color: #e2d9d9;
+}
+
+table tr:hover:not(:first-of-type){
+    background-color: #b8b6b6;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 90rem) {
+    table {
+        width: 60rem;
+    }
+}
+
+@media screen and (max-width: 70rem) {
+    table {
+        width: 45rem;
+    }
+}
+
+@media screen and (max-width: 50rem) {
+    table {
+        width: 30rem;
+    }
+}
+/* mode mobile*/
+@media screen and (max-width: 50rem) {
+    .mobile-container {
+        display: inline;
+    }
+    .commandes {
+        display: none;
+    }
+    
+}
+.commandes-container {
+    width: 100%;
+}
+.commandes-mobile {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.commande-mobile {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #a19292;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.commande-mobile div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.commande-mobile .info:not(:last-of-type) {
+    border-bottom: 1px solid #a19292;
+}

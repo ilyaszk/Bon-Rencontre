@@ -1,0 +1,47 @@
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    padding-top: 1rem;
+}
+
+.toolbar {
+    margin-top: 2rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.newsletter-card {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+th, td {
+    padding: 0.5rem 0rem;
+}
+
+.pages {
+    margin: 1rem 0rem;
+}
+
+.admin-action {
+    display: flex;
+    flex-direction: row;
+}
+
+.delete {
+    margin-left: 1rem;
+}
+
+.top {
+    margin-top: 2rem;
+}

@@ -1,0 +1,105 @@
+.boutiques-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 40px;
+
+
+}
+
+.boutique {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+}
+
+.boutique-filtres {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+select {
+  border-radius: 14px;
+  border: 2px solid gray;
+}
+
+.boutique-filtres-categories-producteurs {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+.boutique-filtres-categories-producteurs *:first-child {
+  margin-right: 20px;
+}
+
+.boutique-filtres-categories-producteurs *:last-child {
+  margin-left: 20px;
+}
+
+section {
+  width: 70%;
+  margin: auto;
+
+}
+
+.filtres-button {
+  display: none;
+  width: 8rem;
+  height: 2rem;
+  border-radius: 14px;
+  border: 2px solid gray;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  transition: 0.7s;
+  cursor: pointer;
+
+}
+
+.filtres-button:hover {
+  box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.35);
+  transition: 0.7s;
+
+}
+
+@media screen and (max-width: 843px) {
+  #categorie-select {
+    display: none;
+
+  }
+
+  #productors-select {
+    display: none;
+  }
+
+  #sort-select {
+    margin-top: 20px;
+    width: 8rem;
+    height: 2rem;
+  }
+
+  .boutique-filtres {
+    flex-direction: column;
+    align-items: center;
+
+
+
+  }
+
+  .boutique-filtres-categories-producteurs p {
+    display: none;
+  }
+
+  .filtres-button {
+    display: inline;
+  }
+
+
+}

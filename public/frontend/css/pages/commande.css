@@ -1,0 +1,96 @@
+.titre {
+    text-align: center;
+}
+.page {
+    width: 90%;
+    margin: auto;
+}
+.commande {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+.articles {
+    display: table;
+    width: 60%;
+    
+    border: 1px solid #e3e3e3;
+  }
+  .infos-commande {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .articles div { 
+    display: table-row;
+   
+    
+    
+  }
+  .articles div:nth-of-type(odd):not(:first-of-type){
+    background-color: #e2d9d9;
+}
+  .articles div span { 
+    display: table-cell;
+    vertical-align: middle;
+
+  }
+  
+
+  .articles div:nth-child(1) {
+    background-color: #3a6070;
+    color: #FFF;
+
+
+  
+  }
+
+  .articles div:last-child {
+    font-weight: bold;
+    border-top: 1px solid black;
+    background-color: #e2d9d9;
+  }
+
+.infos-recup {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-code {
+    width: 100px;
+    height: 100px;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.titre-date,.titre-adresses,.titre-nom {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.nom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.num-commande {
+    margin-bottom: 10px;
+}
+.articles div span{
+  min-width: 95px;
+}
+@media screen and (max-width: 760px) {
+
+  .commande {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

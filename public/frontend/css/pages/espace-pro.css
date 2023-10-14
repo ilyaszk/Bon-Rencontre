@@ -1,0 +1,62 @@
+/* CONTAINER */
+.sellerCards-container {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* CARTE VENDEUR */
+.seller-card {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    width: 250px;
+    height: 200px;
+    transition: 0.5s ease;
+    margin: 0.8rem 0.8rem;
+}
+
+.seller-card:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+
+.seller-card:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+.seller-link {
+    text-decoration: none;
+}
+
+/* ICONE */
+.seller-link .iconify {
+    color: var(--text-color2);
+    font-size: 80px;
+    transition: 0.5s ease;
+    flex: 2;
+}
+
+.seller-card:hover .iconify {
+    color: var(--magenta);
+}
+
+/* TITRE */
+.seller-title {
+    margin: 0rem 0.2rem;
+    transition: 0.5s ease;
+}
+
+.seller-title {
+    margin: 0.2rem 0rem;
+    transition: 0.5s ease;
+}
+
+.seller-card:hover .seller-title {
+    color: var(--magenta);
+}

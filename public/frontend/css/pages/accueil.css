@@ -1,0 +1,64 @@
+.contenu {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+
+}
+
+.container-img {
+    width: 100%;
+    height: 17rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.object-fit-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.produits {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.services .iconify {
+    font-size: 80px;
+    color: var(--text-color2);
+}
+
+.producteur {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.profil {
+    margin-top: 3rem;
+}
+
+.producteur div {
+    width: 15rem;
+    height: 18rem;
+    background-color: black;
+}

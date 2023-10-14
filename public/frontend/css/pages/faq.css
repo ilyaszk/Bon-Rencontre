@@ -1,0 +1,103 @@
+.faq_container {
+    width: 90%;
+}
+
+
+
+.question_list {
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.question_list:hover {
+    box-shadow: var(--shadow-hover);
+    transition: 0.8s;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+
+}
+
+
+.faq {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: var(--white);
+}
+
+.faq:hover {
+    cursor: pointer;
+}
+
+.questions {
+    display: none;
+    cursor: default;
+}
+
+.faq.active .questions {
+    display: block;
+}
+
+.q {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.noselect {
+    margin: 1rem 2rem 1rem 2rem;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--text-color1);
+    border-radius: 10px;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.categories .iconify {
+    padding-top: .5rem;
+}

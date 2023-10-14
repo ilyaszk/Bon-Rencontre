@@ -1,0 +1,75 @@
+.grille , .header{
+    
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    
+}
+
+.page {
+    width: 75%;
+    margin: auto;
+}
+
+.product-img {
+    width: 150px;
+    height: 150px;
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container {
+  
+    display: flex;
+    justify-content: center;
+}
+
+.button-container a {
+    width: 20rem;
+}
+
+.btn-nouveau-produit {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.header div, .grille div:not(.action) {
+    display: flex;
+    justify-content: center;
+}
+
+.grille div {
+    align-items: center;
+}
+
+.en_stock {
+    color: green;
+}
+.pas_en_stock {
+    color: red;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+.titre {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.action input[type=submit]:hover {
+    cursor: pointer;
+}

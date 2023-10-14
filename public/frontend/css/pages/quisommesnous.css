@@ -1,0 +1,41 @@
+.qsn-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.qsn-par1 h1 {
+    text-align: center;
+}
+
+.qsn-par234 h2 {
+    text-align: center;
+}
+
+.qsn-par1 p, .qsn-par234 p {
+    text-align: justify;
+}
+
+.qsn-par234 {
+    display: flex;
+    flex-direction: row;
+}
+
+.qsn-img {
+    margin-top: 6em;
+}
+
+@media screen and (max-width: 760px) {
+    .qsn-par234 {
+        flex-direction: column;
+    }
+}
+
+.qsn-par23 {
+    padding-right: 1em;
+}
+
+.qsn-par4img {
+    padding-left: 1em;
+}

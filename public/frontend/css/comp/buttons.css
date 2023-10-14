@@ -1,0 +1,219 @@
+/* Liens hypertexte */
+
+.textLink {
+    color: var(--magenta);
+    font-weight: 500;
+}
+
+.textLink:hover {
+    text-decoration: none;
+}
+
+/* Bouton Primaire */
+
+.btn-primary {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: var(--yellow);
+    color: var(--white);
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    border-radius: var(--radius-25);
+    box-shadow: var(--shadow);
+    transition: all 0.5s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--magenta);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary .iconify {
+    color: var(--white);
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+/* Boutons secondaires */
+.btn-secondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--magenta);
+    color: var(--white);
+    padding: 0.25rem 1.5rem;
+    border-radius: var(--radius-6);
+    box-shadow: var(--shadow);
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background-color: var(--white);
+    color: var(--text-color1);
+    box-shadow: var(--shadow-hover);
+}
+
+.btn-secondary2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--white);
+    color: var(--text-color1);
+    padding: 0.25rem 1.5rem;
+    border-radius: var(--radius-6);
+    box-shadow: var(--shadow);
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+.btn-secondary2:hover {
+    background-color: var(--magenta);
+    color: var(--white);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Icones FAQ, USER, CART */
+
+.iconbtn {
+    width: 50px;
+    height: 50px;
+    margin: 6px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    font-size: 25px;
+    color: var(--text-color1);
+}
+
+.iconbtn .iconify {
+    font-size: 1em;
+}
+
+.iconbtn:hover {
+    color: var(--magenta);
+    background-color: #fff;
+    transform: translateY(-10px);
+    box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), 2px 12px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* navLink */
+
+.navLink {
+    padding: 20px 10px 20px 10px;
+    margin-right: 0.5em;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.navLink:hover {
+    background-color: #CECECE;
+    border-radius: 15px;
+}
+
+.navLink h6 {
+    position: relative;
+    color: var(--text-color2);
+    margin: 0;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.navLink h6:after {
+    content: "";
+    position: absolute;
+    background-color: var(--magenta);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+
+.navLink:hover h6 {
+    color: var(--text-color1);
+}
+
+.navLink:hover h6:after {
+    color: var(--text-color1);
+    width: 100%;
+}
+
+/* Icones barre de menu */
+
+.navLink .iconify {
+    color: var(--text-color2);
+    font-size: 40px;
+    padding-bottom: 0.1em;
+    transition: 0.7s;
+}
+
+.navLink:hover .iconify {
+    color: var(--text-color1);
+}
+
+@media screen and (max-width: 1100px) {
+    .navLink .iconify {
+        font-size: 25px;
+    }
+
+    .navLink {
+        padding: 10px 10px 10px 10px;
+        margin-right: 0.05em;
+    }
+
+    .navLink h4 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .navLink {
+        flex-direction: row;
+    }
+}
+
+/* Mobile */
+
+.mobile-navlink {
+    width: 94%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 8px;
+    padding: 12px 0px 12px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: 0.5s;
+    background-color: #616161;
+    color: var(--white);
+}
+
+.mobile-navlink .iconify {
+    margin-left: 15px;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.mobile-navlink span {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--white);
+}
